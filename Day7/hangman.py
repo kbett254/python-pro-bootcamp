@@ -4,7 +4,6 @@ from hangman_art import logo
 from hangman_words import word_list
 
 print(logo)
-word_list = ["aardvark", "baboon", "camel"]
 
 chosen_word = random.choice(word_list)
 
@@ -27,6 +26,7 @@ while not game_over:
         if lives == 0:
             game_over = True
             print("You lose. The word was " + chosen_word)
+            
     print(stages[lives])
     print(" ".join(placeholder))
 
